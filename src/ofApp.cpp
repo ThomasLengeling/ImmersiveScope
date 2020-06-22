@@ -8,6 +8,7 @@ void ofApp::setup(){
     camera.setDeviceID( 0 );
     camera.initGrabber( 1280, 720 );
     ofSetWindowShape(camera.getWidth(), camera.getHeight());
+    
     detector.setNetworkImageSize(416, 416);
     detector.setup(ofToDataPath("dnn/yolov3-tiny.cfg"),
                    ofToDataPath("dnn/yolov3-tiny.weights"),
@@ -23,7 +24,7 @@ void ofApp::setup(){
     //                   ofToDataPath("dnn/coco.txt"));
     //video.play();
     
-    detector.setConfidenceThreshold(0.43);
+    detector.setConfidenceThreshold(0.6);
     cout << "version:" << CV_VERSION << endl;
     
     
