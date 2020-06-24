@@ -1,5 +1,6 @@
 ofxOpenCv
 ofxCv
+ofxDatGui
 ofxFaceTracker2
 ofxGui
 ofxOpenCvDnnObjectDetection
